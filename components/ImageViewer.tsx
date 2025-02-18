@@ -7,6 +7,7 @@ type Props = {
 };
 
 export default function ImageViewer({imgSource, selectedImage}: Props){
+    //Optiene el uri de la imagen seleccionada y la pone como la fuente de la imagen
     const imageSource = selectedImage ? {uri: selectedImage} : imgSource;
     return <Image source={imageSource} style={styles.image} />;
 }
